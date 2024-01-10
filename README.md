@@ -78,4 +78,4 @@ Open your browser and visit http://127.0.0.1:5173/ to view the application.
 
 ## Demo
 
-Check out the live demo on [Netlify](https://659e7db7318079d0b7ca433a--warm-phoenix-8043fc.netlify.app/).
+Check out the live demo on [Netlify](https://659e9682697f68e2771f23ce--warm-phoenix-8043fc.netlify.app/).
