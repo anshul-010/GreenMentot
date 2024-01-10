@@ -388,7 +388,7 @@ const getEmissionData = (year, month) => {
       {
         type: 'bar',
         label: 'Emission-2023',
-        backgroundColor: 'rgb(84,111,198)',
+        backgroundColor: 'rgb(255, 99, 132)',
         data: labels.map(month => getEmissionData(2023, month)),
         borderColor: 'white',
         borderWidth: 2,
@@ -397,32 +397,44 @@ const getEmissionData = (year, month) => {
       {
         type: 'bar',
         label: 'Emission-2022',
-        backgroundColor: 'rgb(145,203,116)',
+        backgroundColor: 'rgb(238,201,109)',
         data: labels.map(month => getEmissionData(2022, month)),
         yAxisID: 'y',
       },
     ],
   };
-  const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-        position: 'left',
-        title: {
-          display: true,
-          text: 'Emissions (CO2e)',
-        },
+  
+const options = {
+  scales: {
+    y: {
+      beginAtZero: true,
+      position: 'top',
+      title: {
+        display: true,
+        text: 'Emissions',
       },
-      y1: {
-        beginAtZero: true,
-        position: 'right',
-        title: {
-          display: true,
-          text: 'R/E',
+      ticks: {
+        stepSize: 1000, // Set the step size to 1000
+        callback: function (value) {
+          return value + ' CO2e'; // Append ' CO2e' to each tick value
         },
       },
     },
-  };
+    y1: {
+      beginAtZero: true,
+      position: 'right',
+      title: {
+        display: true,
+        text: 'R/E',
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+  },
+};
   
   export function CombinedChart() {
     return (

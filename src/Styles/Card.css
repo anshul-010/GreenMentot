@@ -3,9 +3,7 @@
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
     margin-top: 2.44rem;
-    /* width: ; */
     margin-left: 1.87rem;
-    /* border: 1px solid; */
 }
 
 .card-inner-div {
@@ -16,10 +14,9 @@
     gap: 1rem;
     margin-top: 1.06rem;
     align-self: stretch;
-    border-radius: 0.5rem;
+    border-radius:8px;
     border: 1px solid #f8cdca;
     border-left: 6px solid #E03021;
-    /* margin-bottom: 3rem; */
 }
 .card-inner-div p:last-child{
     color: #c65353;
@@ -70,7 +67,8 @@
     /* text-align: center; */
     font-family: Poppins;
     font-size: 0.7rem;
-    font-style: italic;
+    /* font-style: italic; */
+    color: gray;
     font-weight: 275;
     line-height: normal;
 }
