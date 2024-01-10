@@ -1,6 +1,6 @@
 #table-container{
    
-    width: 645px;
+    width: 55%;
     flex-shrink: 0;
 }
 
@@ -84,6 +84,10 @@ td{
 }
 
 
-@media screen and (min-width: 600px){
-
+@media screen and (max-width: 600px){
+    #table-container{
+   
+        width: 100%;
+        flex-shrink: 0;
+    }
 }

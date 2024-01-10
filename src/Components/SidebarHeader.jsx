@@ -39,6 +39,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { Card } from "./Card";
 import {  CombinedChart } from "./Barchart";
 import { Table } from "./Table";
+import { DoughnutChart } from "./DoughnutChart";
 const LinkItems = [
   { name: "Home", icon: FiHome },
   { name: "Trending", icon: FiTrendingUp },
@@ -172,7 +173,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
         px={{ base: 4, md: 4 }}
         height="20"
         alignItems="center"
-        // border="2px solid red"
+        // border="2px solid blue"
         bg={useColorModeValue("white", "gray.900")}
         borderBottomWidth="1px"
         borderBottomColor={useColorModeValue("gray.200", "gray.700")}
@@ -199,12 +200,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
         </Box>
 
         <HStack spacing={{ base: "0", md: "6" }}>
-          <IconButton
-            size="lg"
-            variant="ghost"
-            aria-label="open menu"
-            icon={<FiBell />}
-          />
+          
           <Flex alignItems={"center"}>
             <Menu>
               <MenuButton
@@ -216,40 +212,40 @@ const MobileNav = ({ onOpen, ...rest }) => {
                   <Avatar
                     size={"sm"}
                     src={
-                      "https://images.unsplash.com/photo-1619946794135-5bc917a27793?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
+                      "https://s3-alpha-sig.figma.com/img/b270/0d23/767117420f0f997824b701ee2fce525b?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e4i3kXNB6MQGcPoEeb9QxMjz6dbw1fpFjujfUGGbjo603Q5vY-EklfYygLXWdxCI53s5vi3cjwm97mbsAXzQKS4arCB2AkLWpaaTztNU5-XBkZMyVxyglLxEBu1JKnPF9iBEzVOmEeNBkv4c2BQbfWfDL8hIQjcpklLa-LZZT7lTix9KnSK3ujpw15mv0pxwBYn2ZPmpT0X9AKjRK7jzoW6zG0BUUxKuQRxBx984rjwThMCTeq2r6RnyZn-69y85-DUdsUb7C4gD7QXba24fUA3K6ZI-wCIPo8yGlw6ueLEd~BwjVKQNlUgsmXMUL3XPFWgYoAZRTxWk9YMi8Nen7A__"
                     }
                   />
-                  <VStack
-                    display={{ base: "none", md: "flex" }}
-                    alignItems="flex-start"
-                    spacing="1px"
-                    ml="2"
-                  >
-                    <Text fontSize="sm">Justina Clark</Text>
-                    <Text fontSize="xs" color="gray.600">
-                      Admin
-                    </Text>
-                  </VStack>
                   <Box display={{ base: "none", md: "flex" }}>
-                    <FiChevronDown />
+                    <FaSortDown />
                   </Box>
                 </HStack>
               </MenuButton>
             </Menu>
           </Flex>
+          <Box className="bell-icon">
+            <IconButton
+              size="lg"
+              variant="ghost"
+              aria-label="open menu"
+              icon={<FiBell />}
+            />
+            <button className="btn-1">1</button>
+          </Box>
         </HStack>
       </Flex>
       <Box
         height="90vh"
         pl={{ base: "", md: "10px" }}
-        border="1px solid red"
+        // border="1px solid red"
         ml={{ base: "", lg: "17.5%" }}
       >
         <Card />
         <Box className="barchart">
-          {/* <Barchart/> */}
-          {/* <CombinedChart/> */}
-          <Table/>
+          <CombinedChart/>
+          <Box display="flex" flexDirection={{base: "column",lg:"row"}} justifyContent={{base:"",lg:"space-between"}} gap={{base:"20px",lg:"0"}}>
+            <DoughnutChart/>
+            <Table/>
+          </Box>
         </Box>
       </Box>
     </Box>
