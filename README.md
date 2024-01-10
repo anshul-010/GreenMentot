@@ -65,8 +65,8 @@ Open your browser and visit http://127.0.0.1:5173/ to view the application.
 ## Screenshots/GIFs
 # Large Screen View
 
-![greenmentor-1](https://github.com/anshul-010/GreenMentot/assets/93611786/8341ddb8-bacf-4cbf-a4e3-9ee5ddb7d39f)
-![greenmentor-2](https://github.com/anshul-010/GreenMentot/assets/93611786/a2d92720-bc52-44ff-b905-4d731e78b888)
+![greenmentor-1](https://github.com/anshul-010/GreenMentot/assets/93611786/0b87a0b8-a007-42c4-9b1a-6a7612c1fb56)
+![greenmentor-2](https://github.com/anshul-010/GreenMentot/assets/93611786/ab1e98a9-1023-49b3-b065-e2a13f8c4419)
 
 
 # Small Screen View 
