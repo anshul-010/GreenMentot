@@ -38,6 +38,7 @@ This repository contains the code for a frontend assignment aimed at creating a 
 - JavaScript
 - React.js
 - Chakra UI
+- Chart.js
 - ReactChart2.js
 
 ## Getting Started
